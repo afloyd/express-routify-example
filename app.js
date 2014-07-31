@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.locals.title = 'express-routify-example';
+
 var lib = require('./lib');
 lib.routes = require('express-routify')(app, {
 	routeOpts : {lib: lib, app: app}

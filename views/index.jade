@@ -1,9 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1 Welcome to #{title}
 
-
-  h2 Data from route handler:
-    pre!= typeof data !== 'undefined' ? JSON.stringify(data) : 'n/a'
+    h2 Data from route handler:
+        pre!= typeof data !== 'undefined' ? JSON.stringify(data) : 'n/a'
